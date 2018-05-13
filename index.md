@@ -90,4 +90,5 @@ git grep "delete from"                                    # 文件中搜索文�
 git grep -e '#define' --and -e SORT_DIRENT
 git gc
 git fsck
+git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4 #查找分支創建人
 ```
